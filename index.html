@@ -464,12 +464,14 @@
     <div class="backdrop backdrop__hidden" data-modal>
       <div class="modal">
         <div class="modal__close-wrapper">
+          <!-- button close -->
           <button class="modal__close" data-modal-close>
             <svg  class="modal__close-icon" width="18" height="18">
                   <use href="./images/svg/icon-sprite.svg#icon-close"></use>
                 </svg>
           </button>
           <p class="modal__data-request">Оставьте свои данные, мы вам перезвоним</p>
+          <!-- fill fields -->
           <form class="modal__form" autocomplete="off">
             <label class="modal__form-field">
               <input type="text" class="modal__form-input" name="name" placeholder=" ">
@@ -492,6 +494,21 @@
                   <use href="./images/svg/icon-sprite.svg#icon-email"></use>
                 </svg>
             </label>
+            <!-- textarea -->
+            <label class="modal__form-field">
+              <span class="modal__form-label">Коментарий</span>
+              <textarea class="modal__form-input modal__form-comment" name="comment" cols="30" rows="8" placeholder=" "></textarea>
+              <span class="modal__form-label modal__form-label_placeholder">Введите текст</span>
+            </label>
+            <!-- checkbox -->
+            <label class="modal__form-checkbox">
+              <input type="checkbox" class="modal__checkbox" name="topic">
+              <p class="modal__text-checkbox" >
+                Соглашаюсь с рассылкой и принимаю <a href="#" class="modal__text-checkbox_link">Условия договора</a>
+              </p>
+            </label>
+            <!-- button submit -->
+            <button class="modal__btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>
